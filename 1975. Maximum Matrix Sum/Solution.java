@@ -25,7 +25,6 @@ class Solution {
         if(negCount%2!=0){
             res -= 2L*minabs;
         }
-
         return res;
     }
 }

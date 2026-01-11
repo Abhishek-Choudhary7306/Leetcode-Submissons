@@ -8,7 +8,7 @@ This repository contains my **personal solutions to LeetCode problems**, written
 
 ## Language Used
 - **Java**
-- **Python**
+
 
 
 ## Purpose

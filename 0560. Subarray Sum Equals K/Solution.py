@@ -1,20 +1,14 @@
 class Solution(object):
     def subarraySum(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
-        presum = 0
+        prefix_sum = 0
         count = 0
-        freq = {}
-        freq[0] = 1
+        hashmap = {0: 1}
 
-        for i in nums:
-            presum += i
-            rem = presum - k
-            count+=freq.get(rem,0)
-            freq[presum] = freq.get(presum,0)+1
+        for x in nums:
+            prefix_sum += x
+            rem = prefix_sum - k
+            if rem in hashmap:
+                count += hashmap[rem]
+            hashmap[prefix_sum] = hashmap.get(prefix_sum, 0) + 1
 
         return count
-

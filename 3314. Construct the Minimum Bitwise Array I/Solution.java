@@ -18,7 +18,6 @@ class Solution {
                 result[i] = target ^ (1 << (count - 1));
             }
         }
-        
         return result;
     }
 }

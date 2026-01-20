@@ -1,3 +1,24 @@
-public class Solution {
-    
+class Solution {
+    public int[] minBitwiseArray(List<Integer> nums) {
+        int n = nums.size();
+        int[] result = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            int target = nums.get(i);
+            
+            if (target % 2 == 0) {
+                result[i] = -1;
+            } else {
+                int temp = target;
+                int count = 0;
+                while ((temp & 1) == 1) {
+                    temp >>= 1;
+                    count++;
+                }
+                result[i] = target ^ (1 << (count - 1));
+            }
+        }
+        
+        return result;
+    }
 }

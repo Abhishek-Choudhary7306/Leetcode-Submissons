@@ -11,3 +11,5 @@ class Solution(object):
                 st.append(ch)
 
         return not st
+
+        

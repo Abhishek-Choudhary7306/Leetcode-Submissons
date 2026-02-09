@@ -20,4 +20,4 @@ This repository contains my **personal solutions to LeetCode problems**, written
 
 
 
-## Feel free to explore and suggest improvements.
+## Feel free to explore and suggest improvements if needed.

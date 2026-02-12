@@ -1,3 +1,5 @@
+#brute force
+
 class Solution(object):
     def search(self, nums, target):
         """

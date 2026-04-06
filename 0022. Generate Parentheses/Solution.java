@@ -1,3 +1,4 @@
+//recursive backtracking solution 
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();

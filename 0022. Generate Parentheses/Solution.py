@@ -1,4 +1,4 @@
-//backtracking approach
+#backtracking approach
 
 class Solution(object):
     def generateParenthesis(self, n):

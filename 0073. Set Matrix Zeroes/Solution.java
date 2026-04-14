@@ -1,4 +1,4 @@
-//brute
+//bruteforce solution
 
 class Solution {
     public void setZeroes(int[][] matrix) {

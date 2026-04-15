@@ -1,3 +1,5 @@
+#better solution O(n^2)
+
 class Solution(object):
     def setZeroes(self, matrix):
         """

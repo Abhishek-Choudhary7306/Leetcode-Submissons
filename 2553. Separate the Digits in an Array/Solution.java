@@ -1,29 +1,31 @@
-class Solution {
-    public int[] separateDigits(int[] nums) {
-        ArrayList<Integer> res = new ArrayList<>();
-        for(int i=0;i<nums.length;i++){
-            int[] number = divide(nums[i]);
+//first arrpoach (bruteforce)
 
-            for(int j = 0;j<number.length;j++){
-                res.add(number[j]);
-            }
-        }
+// class Solution {
+//     public int[] separateDigits(int[] nums) {
+//         ArrayList<Integer> res = new ArrayList<>();
+//         for(int i=0;i<nums.length;i++){
+//             int[] number = divide(nums[i]);
 
-        return res.stream().mapToInt(Integer::intValue).toArray();
-    }
+//             for(int j = 0;j<number.length;j++){
+//                 res.add(number[j]);
+//             }
+//         }
 
-    private int[] divide(int num){
-        if(num==0)return new int[]{0};
+//         return res.stream().mapToInt(Integer::intValue).toArray();
+//     }
 
-        ArrayList<Integer> res = new ArrayList<>();
-        while(num!=0){
-            int d = num%10;
-            num = num/10;
-            res.add(d);
-        }
+//     private int[] divide(int num){
+//         if(num==0)return new int[]{0};
 
-        Collections.reverse(res);
+//         ArrayList<Integer> res = new ArrayList<>();
+//         while(num!=0){
+//             int d = num%10;
+//             num = num/10;
+//             res.add(d);
+//         }
 
-        return res.stream().mapToInt(Integer::intValue).toArray();
-    }
-}
+//         Collections.reverse(res);
+
+//         return res.stream().mapToInt(Integer::intValue).toArray();
+//     }
+// }

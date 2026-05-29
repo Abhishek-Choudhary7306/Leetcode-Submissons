@@ -2,9 +2,8 @@ class Solution {
     public int minElement(int[] nums) {
         int res = Integer.MAX_VALUE;
         for(int i=0;i<nums.length;i++){
-            nums[i] = digitSum(nums[i]);
-            if(nums[i]<res){
-                res = nums[i];
+            if(digitSum(nums[i])<res){
+                res = digitSum(nums[i]);
             }
         }
 

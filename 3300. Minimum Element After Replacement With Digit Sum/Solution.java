@@ -1,3 +1,5 @@
+//optimal solution 
+
 class Solution {
     public int minElement(int[] nums) {
         int res = Integer.MAX_VALUE;

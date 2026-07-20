@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public int aggressiveCows(int[] stalls, int k) {
         // code here

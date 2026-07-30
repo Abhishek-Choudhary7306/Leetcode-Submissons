@@ -1,4 +1,4 @@
-//better Solution due to the input always a palindrome 
+//better Solution Question specific (due to the input always given a palindrome )
 
 class Solution {
 

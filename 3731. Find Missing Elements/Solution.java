@@ -1,4 +1,5 @@
-//one solutionclass Solution {
+//one solution
+class Solution {
     public List<Integer> findMissingElements(int[] nums) {
         List<Integer> res = new ArrayList<>();
 

@@ -1,4 +1,4 @@
-#Better Solution
+#best Solution
 
 class Solution(object):
     def uniformArray(self, nums1):
@@ -6,18 +6,42 @@ class Solution(object):
         :type nums1: List[int]
         :rtype: bool
         """
-        
-        minEven = float('inf')
-        minOdd = float('inf')
+        #find min Value 
+        min_val = min(nums1)
 
+
+        #if min value is odd the ans is always True
+        if(min_val %2 != 0):
+            return True
+
+        #if min value is even we need to check all the elements should be even 
         for num in nums1:
-            if num%2==0:
-                minEven = min(minEven,num)
-            else:
-                minOdd = min(minOdd,num)
+            if(num%2!=0):
+                return False 
+            
+        return True
+
+
+#Better Solution
+
+# class Solution(object):
+#     def uniformArray(self, nums1):
+#         """
+#         :type nums1: List[int]
+#         :rtype: bool
+#         """
+        
+#         minEven = float('inf')
+#         minOdd = float('inf')
+
+#         for num in nums1:
+#             if num%2==0:
+#                 minEven = min(minEven,num)
+#             else:
+#                 minOdd = min(minOdd,num)
             
 
-        return minOdd == float('inf') or minEven>minOdd
+#         return minOdd == float('inf') or minEven>minOdd
 
 
 #One Solution 

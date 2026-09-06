@@ -1,3 +1,4 @@
+#better Soln O(n)
 class Solution(object):
     def firstStableIndex(self, nums, k):
         """
@@ -22,5 +23,7 @@ class Solution(object):
             if score<=k:
                 return i
         return -1
+
+
 
         
